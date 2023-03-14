@@ -31,7 +31,7 @@ def main():
     if input_type[:1] == 'F':
         file_name = input()
         try:
-            with open("test/"+file_name+"") as text_file:
+            with open("tests/"+file_name+"") as text_file:
                 n = int(text_file.readline())
                 data = text_file.readline()
                 data = list(map(int, data.split()))
